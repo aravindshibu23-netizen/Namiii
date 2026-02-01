@@ -5,15 +5,18 @@
 <title>Hey Nami 🌻</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        overflow-x: hidden;
-        background: url('https://vcresearch.berkeley.edu/sites/default/files/news_images/sunflowerfield750.jpg') no-repeat center center fixed;
-        background-size: cover;
-        color: #333;
-    }
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    background-image: url('https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
 
     h1 {
         margin-top: 40px;
@@ -72,9 +75,14 @@
 <body>
 
 <!-- Background Music -->
-<audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
+<audio id="bgmusic" src="music.mp3" loop></audio>
+
+<script>
+document.addEventListener("click", function () {
+    document.getElementById("bgmusic").play();
+}, { once: true });
+</script>
+
 
 <h1>Hey Nami 🌻</h1>
 
